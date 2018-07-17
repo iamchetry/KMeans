@@ -53,6 +53,5 @@ def kmeans_main(num_of_vars=None, length_of_data=None, num_clusters=None):
 def scatter_plot(data_=None, colors_tag=None):
     colors_ = [colors_tag[k] for k in data_[:, -1].astype('int')]
     plt.scatter(data_[:, 0], data_[:, 1], c=colors_, alpha=0.5)
-    #plt.plot(data_[:, 1], data_[:, 2])
     plt.show(block=True)
     plt.interactive(False)
